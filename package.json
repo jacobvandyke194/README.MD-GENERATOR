@@ -1,0 +1,23 @@
+{
+  "name": "readme.md-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobvandyke194/README.MD-GENERATOR.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacobvandyke194/README.MD-GENERATOR/issues"
+  },
+  "homepage": "https://github.com/jacobvandyke194/README.MD-GENERATOR#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
