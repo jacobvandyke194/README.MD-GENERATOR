@@ -1,6 +1,13 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+function readMe({title, description, installInstructions}) {
+    return(
+        `-----${title}-----
+        
+        `
+    )
+}
 
 inquirer
     .prompt([
@@ -11,7 +18,7 @@ inquirer
         },
         {
             type: 'input',
-            name: 'Description',
+            name: 'description',
             message: 'Give a brief description of your project:'
         },
         {
@@ -44,12 +51,7 @@ inquirer
     ])
     .then ((data) => {
          const makeReadMeFile = readMe(data);
-
+         
         fs.writeFile('readme.md', makeReadMeFile, (err) => err ? console.log(err)
         : console.log('Creating README.MD file...'));
-    })
-
-    function readMe(data) {
-        `Title: ${data.title}`
-       console.log( `Hello This is your README File` )
-    }
+    });
